@@ -1,10 +1,13 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Navber from "./Navber/Navber";
 
 function App() {
   return (
     <div>
-      <h1>hello</h1>
-      <h1>hello</h1>
+      <Routes>
+        <Route path="/" element={<Navber></Navber>}></Route>
+      </Routes>
     </div>
   );
 }
